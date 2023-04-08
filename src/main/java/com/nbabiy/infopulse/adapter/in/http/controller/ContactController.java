@@ -20,7 +20,7 @@ public class ContactController implements ContactsApi {
 
     @Override
     public ResponseEntity<List<ContactResponse>> contacts() {
-        final List<Contact> contacts = readContactUseCase.read();
+        final List<Contact> contacts = readContactUseCase.readAll();
         return ResponseEntity.ok(contactMapper.toListResponse(contacts));
     }
 

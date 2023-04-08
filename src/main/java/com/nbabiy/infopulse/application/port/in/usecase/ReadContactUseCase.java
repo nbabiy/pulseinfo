@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface ReadContactUseCase {
 
-    List<Contact> read();
+    List<Contact> readAll();
 
 }

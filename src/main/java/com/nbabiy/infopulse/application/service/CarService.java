@@ -16,7 +16,7 @@ public class CarService implements ReadContactUseCase {
     private final List<Contact> contacts = new ArrayList<>();
 
     @Override
-    public List<Contact> read() {
+    public List<Contact> readAll() {
         return contacts;
     }
 
